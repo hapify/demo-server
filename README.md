@@ -1,2 +1,2 @@
 # demo-server
-Simple server for console demo
+Simple server for GUI demo
