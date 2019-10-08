@@ -17,6 +17,4 @@ RUN cd /app && git clone https://github.com/Tractr/boilerplate-ngx-dashboard.git
 
 COPY entrypoint.sh /app/entrypoint.sh
 
-EXPOSE 4800
-
 ENTRYPOINT ["/app/entrypoint.sh"]
