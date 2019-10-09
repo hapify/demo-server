@@ -15,6 +15,8 @@ RUN cd /app && git clone https://github.com/Tractr/boilerplate-hapijs.git
 RUN cd /app && git clone https://github.com/Tractr/boilerplate-ngx-components.git
 RUN cd /app && git clone https://github.com/Tractr/boilerplate-ngx-dashboard.git
 
-COPY entrypoint.sh /app/entrypoint.sh
+VOLUME /app
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
