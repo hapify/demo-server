@@ -19,6 +19,7 @@ docker run -it --rm \
        -e HPF_PROJECT=XXXXXXXXXXXXXXXXXXXXX \
        -e HPF_PORT=4800 \
        -e HPF_HOSTNAME=domain.com \
+       -e HPF_API_URL=https://api.hapify.io/v1 \
        --name hpf-sandbox-server \
        hapify/sandbox-server
 ```

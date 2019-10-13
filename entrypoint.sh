@@ -14,8 +14,14 @@ fi
 
 PORT="${HPF_PORT:-4800}"
 HOST="${HPF_HOSTNAME:-localhost}"
+API_URL="${HPF_API_URL:-https://api.hapify.io/v1}"
 
-hpf key ${HPF_KEY}
+hpf config --apiKey ${HPF_KEY}
+
+if [[ ! -z "$HPF_API_URL" ]]; then
+    hpf config --apiUrl ${HPF_API_URL}
+fi
+
 hpf -d /app use -p ${HPF_PROJECT}
 
 hpf --debug -d /app serve -p ${PORT} -H ${HOST} --no-open
