@@ -8,7 +8,7 @@ RUN apt-get update && \
         curl \
         software-properties-common
 
-RUN npm install -g hapify-cli
+RUN npm install -g hapify-cli@0.5.4
 
 RUN mkdir /app
 RUN cd /app && git clone --branch v2.0.1 https://github.com/Tractr/boilerplate-hapijs.git
