@@ -14,7 +14,6 @@ fi
 
 PORT="${HPF_PORT:-4800}"
 HOST="${HPF_HOSTNAME:-localhost}"
-API_URL="${HPF_API_URL:-https://api.hapify.io/v1}"
 
 hpf config --apiKey ${HPF_KEY}
 
