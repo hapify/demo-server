@@ -8,12 +8,18 @@ RUN apt-get update && \
         curl \
         software-properties-common
 
-RUN npm install -g hapify-cli@0.5.6
+RUN npm install -g @hapify/cli@0.7.9
 
 RUN mkdir /app
-RUN cd /app && git clone --branch v2.0.1 https://github.com/Tractr/boilerplate-hapijs.git
-RUN cd /app && git clone --branch v2.0.0 https://github.com/Tractr/boilerplate-ngx-components.git
-RUN cd /app && git clone --branch v2.0.0 https://github.com/Tractr/boilerplate-ngx-dashboard.git
+RUN hpf -d /app new \
+     --boilerplate-url https://github.com/Tractr/boilerplate-hapijs.git \
+     --boilerplate-url https://github.com/Tractr/boilerplate-ngx-components.git \
+     --boilerplate-url https://github.com/Tractr/boilerplate-ngx-dashboard.git \
+     --preset 5c8607a696d1ff00107de412 \
+     --preset 5c869a8996d1ff00107de42b \
+     --preset 5c86966796d1ff00107de41c \
+     --project-name "Demo project" \
+     --project-desc "Sample project for Hapify"
 
 VOLUME /app
 

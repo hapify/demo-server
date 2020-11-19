@@ -12,6 +12,19 @@ docker build . -t hpf-sandbox-server
 
 ### Run this image
 
+#### Using local storage
+
+```bash
+docker run -it --rm \
+       -p 4800:4800 \
+       -e HPF_PORT=4800 \
+       -e HPF_HOSTNAME=domain.com \
+       --name hpf-sandbox-server \
+       hapify/sandbox-server
+```
+
+#### Using remote storage
+
 ```bash
 docker run -it --rm \
        -p 4800:4800 \
