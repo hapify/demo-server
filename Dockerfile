@@ -8,7 +8,7 @@ RUN apt-get update && \
         curl \
         software-properties-common
 
-RUN npm install -g @hapify/cli@0.7.9
+RUN npm install -g @hapify/cli@0.8.1
 
 RUN mkdir /app
 RUN hpf -d /app new \
