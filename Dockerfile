@@ -15,9 +15,9 @@ RUN hpf -d /app new \
      --boilerplate-url https://github.com/Tractr/boilerplate-hapijs.git \
      --boilerplate-url https://github.com/Tractr/boilerplate-ngx-components.git \
      --boilerplate-url https://github.com/Tractr/boilerplate-ngx-dashboard.git \
-     --preset 5c8607a696d1ff00107de412 \
-     --preset 5c869a8996d1ff00107de42b \
-     --preset 5c86966796d1ff00107de41c \
+     --preset 60104aabe0fe50001033f10e \
+     --preset 60104aabe0fe50001033f110 \
+     --preset 60104aabe0fe50001033f10f \
      --project-name "Demo project" \
      --project-desc "Sample project for Hapify"
 
